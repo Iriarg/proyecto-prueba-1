@@ -1,6 +1,7 @@
 body {
     background-color: #E8F4FF;
     font-weight: bolder;
+    text-align: center;
 }
 
 header {
@@ -33,17 +34,23 @@ header {
 
 .members {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 #one, #two, #three, #four {
     size: 20%;
+    width: 300px;
+    height: 300px;
+    border-radius: 160px;
 }
 
 .CrewPaz {
-    background-image: url(photos/paz2.png);
-    background-repeat: no-repeat;
-    background-size: 70%;
+    background-image: url(photos/paz2.jpeg);
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+    border-radius: 160px;
+    border: 5px solid #A784E0;
 }
 
 #one:hover
@@ -52,9 +59,13 @@ header {
 }
 
 .CrewIria {
-    background-image: url(photos/iria2.png);
-    background-repeat: no-repeat;
-    background-size: 70%;
+    background-image: url(photos/iria2.jpeg);
+    background-size: cover;
+    size: 20%;
+    width:300px;
+    height:300px;
+    border-radius:160px;
+    border:5px solid #A784E0;
 }
 
 #three:hover {
@@ -62,9 +73,13 @@ header {
 }
 
 .CrewSara {
-    background-image: url(photos/sara2.png);
-    background-repeat: no-repeat;
-    background-size: 70%;
+    background-image: url(photos/sara2.jpeg);
+    background-size: cover;
+    size: 20%;
+    width:300px;
+    height:300px;
+    border-radius:160px;
+    border:5px solid #A784E0;
 }
 
 #two:hover
@@ -73,9 +88,13 @@ header {
 }
 
 .CrewEsther {
-    background-image: url(photos/esther2.png);
-    background-repeat: no-repeat;
-    background-size: 70%;
+    background-image: url(photos/esther2.jpeg);
+    background-size: cover;
+    size: 20%;
+    width:300px;
+    height:300px;
+    border-radius:160px;
+    border:5px solid #A784E0;
 }
 
 #four:hover {
