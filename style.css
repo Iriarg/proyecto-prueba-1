@@ -1,5 +1,6 @@
 body {
-    background-color: #E8F4FF;
+    background: url(photos/galaxy.jpg);
+    background-size: contain;
     font-weight: bolder;
     text-align: center;
 }
@@ -8,6 +9,10 @@ header {
     text-align: center;
     background-color: #003c76;
     margin: 0em;
+}
+
+section {
+    background-color:#ffe8f6 ;
 }
 
 .title {
@@ -129,6 +134,7 @@ li:before {
     content: "-";
     padding-right: 5px;
 }
+
 .responsive-banner {
 	margin: 80px auto;
 	width: 40%;
@@ -171,4 +177,8 @@ footer {
 
 span {
     font-family: sans-serif;
+}
+
+button {
+    size: 3em;
 }
