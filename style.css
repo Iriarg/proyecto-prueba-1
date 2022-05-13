@@ -8,7 +8,7 @@ body {
 header {
     text-align: center;
     background-color: #003c76;
-    margin: 0em;
+    padding-top: 1.5em;
 }
 
 section {
@@ -179,6 +179,15 @@ span {
     font-family: sans-serif;
 }
 
-button {
-    size: 3em;
+.botonimagen{
+    background-image:url(photos/logo.png);
+    background-repeat:no-repeat;
+    height:150px;
+    width:350px;
+    background-position:center;
+  }
+
+#gatitos {
+    display: flex;
+    size: 20%;
 }

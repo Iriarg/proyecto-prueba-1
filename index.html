@@ -11,13 +11,11 @@
 
 <body>
     <a class="responsive-banner">
-    <button name="boton" type="submit">
-        <img src="photos/logo.png">
-        <a title="Imagen del boton" href="https://www.twitter.com" target="_blank">Explora!</a>
-    </button>
-
-
-    </a>
+    <div class="button"></div>
+        <button value="Explore!"><form action="page.html"></form></button>
+        <input type="button" class="botonimagen" value="Explore!">
+        </button>
+    </div>
     <header>
         <h1 class="title">The Codels</h1>
         <h2 class="slogan"><i>Hazlo o no lo hagas, pero no lo intentes.</i></h2>
@@ -52,26 +50,31 @@
             <h3>Solidaridad</h3>
         </div>   
     </section>
-    <section>
-        <img src="https://walac.pe/wp-content/uploads/2018/07/felino.jpg" id="img" onclick="changeImg()" alt="Cara Feliz">
+    <section id="gatitos">
+        <img src="https://walac.pe/wp-content/uploads/2018/07/felino.jpg" width="24%" height="30%" id="img" onclick="changeImg()" alt="Cara Feliz">
+        <img src="https://walac.pe/wp-content/uploads/2018/07/felino.jpg" width="24%" height="30%" id="img" onclick="changeImg()" alt="Cara Feliz">
+        <img src="https://walac.pe/wp-content/uploads/2018/07/felino.jpg" width="24%" height="30%" id="img" onclick="changeImg()" alt="Cara Feliz">
+        <img src="https://walac.pe/wp-content/uploads/2018/07/felino.jpg" width="24%" height="30%" id="img" onclick="changeImg()" alt="Cara Feliz">
 
-    <script id="gatito1">
-        const img = document.getElementById('img');
-        let happy = false;
+        <script id="gatito1">
+            const imgs = document.querySelectorAll('#img');
+            console.log(img)
+            let happy = false;
 
-        function changeImg() {
+            function changeImg() {
+                for (let img of imgs) {
 
-            if (happy) {
-                img.src = 'https://walac.pe/wp-content/uploads/2018/07/felino.jpg';
-            } else {
-                img.src = 'https://t1.pixers.pics/img-1fb6f67c/cortinas-transparentes-pequeno-gatito-triste.jpg?H4sIAAAAAAAAA3WOXW7DIBCEr4Ml7F3-jPEB8pojWIRAQus_Aamjnr5YVR-rfZjdkWbng9eabfDg_Fp8giXe77OHEOd65TH5HL89QaqMasbqzgQRm3H78smlbSetYbQVgqre0J7rZjxsDS42fZJnKXseAbLo9viu36q4DG7JwJEZQAHKGReMUMzKQU9HXO_b0bpXKjauuc1P71Or8D3Ibl8fFM9p_pgkIpUnS0lxIRVuq7WFfOyPBv6p_t2hpuByrQJagODA-WlNl6tELQTnfOrRMRXCre8Hy1VgWguuh0E7dquoTna15Qf5e6pUOQEAAA==';
+                    if (happy) {
+                        img.src = 'https://walac.pe/wp-content/uploads/2018/07/felino.jpg';
+                    } else {
+                        img.src = 'https://t1.pixers.pics/img-1fb6f67c/cortinas-transparentes-pequeno-gatito-triste.jpg?H4sIAAAAAAAAA3WOXW7DIBCEr4Ml7F3-jPEB8pojWIRAQus_Aamjnr5YVR-rfZjdkWbng9eabfDg_Fp8giXe77OHEOd65TH5HL89QaqMasbqzgQRm3H78smlbSetYbQVgqre0J7rZjxsDS42fZJnKXseAbLo9viu36q4DG7JwJEZQAHKGReMUMzKQU9HXO_b0bpXKjauuc1P71Or8D3Ibl8fFM9p_pgkIpUnS0lxIRVuq7WFfOyPBv6p_t2hpuByrQJagODA-WlNl6tELQTnfOrRMRXCre8Hy1VgWguuh0E7dquoTna15Qf5e6pUOQEAAA==';
+                    }
+                }
+
+                // Change to true or False the variable happy
+                happy = !happy;
             }
-
-            // Change to true or False the variable happy
-            happy = !happy;
-        }
-    </script>
-    
+        </script>
     </section>
     <section id="tool">
         <h2 id="tools">Tools</h2>
